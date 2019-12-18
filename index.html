@@ -11,13 +11,21 @@ h1, h2 {
   text-align:center;
   line-height:100%;
   font-family: 'Lato', sans-serif;
+    color:#666666;
 }
 
 h1{
-  font-size: 50px;
+  font-size: 30px;
   text-transform: uppercase;
   word-spacing: 10px;
-  color:#666666;
+}
+
+p {
+    font-family: 'Lato', sans-serif;
+    font-size: 30px;
+    color:white;
+    position:relative;
+    top:-30px;
 }
 
 li {
@@ -38,57 +46,109 @@ div.container {
  margin-left: auto;
  margin-right: auto;
  margin-top:50px;
+ height:auto;
+ background-color:re
 }
   
 div.header {
  background-color:white; 
- margin-bottom:30px;
 }
 
 
 div.full {
-  background-color:#ffff66; 
+  background-image: linear-gradient(#ffff80, white);
+  background-color:#ffff80; 
  margin: auto; padding: 10px 0px;  font-size: 16px;text-align: center; word-spacing:0px; max-width: 80%;
  margin-bottom:10px;
 
 }
 
+div.divider{
+    background-color:#f2f2f2; 
+ margin: auto; padding: 5px 0px;  font-size: 16px;text-align: center; word-spacing:0px; max-width: 80%;
+ margin-bottom:5px; margin-top:5px;
+}
+
 a.full {
    margin: 0px 50px 0px 50px;
 	 padding: 0px 1px 0px 3px;
-  color: black;
+  color: #424242;
   text-decoration: none;
    font-family: 'Lato', sans-serif;
    line-height: 30px;
 }
 
-a.full:link, a.full:visited, a.full:hover, a.half {
-    color: black; 
+a.full:link, a.full:visited, a.full:hover, a.half, a.halfus, a.halfasia, a.halfep {
+    color: #424242; 
    text-decoration: none;
 }
 
 a.full:hover, a.half:hover {
-  text-transform: bold; 
 	 background-color:#cce6ff;
 }
 
+ a.halfus:hover {
+   background-color:#ccccff;
+ }
+ 
+ a.halfep:hover {
+   background-color:#ffccff;
+ }
+ 
+/*
+  a.halfasia:hover{
+   background-color:#c2f0f0;
+ }
+*/
 
 div.halfcontainer {
  width:80%;
  overflow: hidden;
 margin: auto;
+height:auto;
 }
 
 div.half {
- width:50%;
+ width:45%;
+ margin:auto;
+ float:left;
+ text-align:center;
+  height:auto;
+
+
+}
+
+#nz, #us, #asia, #ep {
+ width:10%;
  margin:auto;
  float:left;
  text-align:center;
 
-
 }
 
+#nz {
+  background-image: linear-gradient(#cce6ff, white);
+ height:240px;
+}
 
+#us {
+    background-image: linear-gradient(#ccccff, white);
+background-color:#ccccff;
+height:64px;
+}
+
+#ep{
+  background-image: linear-gradient(#ffccff, white);
+height:95px;
+}
+
+/*
+#asia{
+  background-image: linear-gradient(#c2f0f0, white);
+height:200px;
+}
+*/ 
+  
 
 </style>
 
@@ -117,8 +177,11 @@ div.half {
     
     
   </div>
+  
+  
   <div class="halfcontainer">
    
+   <div id="nz"> <p>NZ AU</p></div>
    
     <div class="half">
     <h2>Patent</h2>
@@ -159,16 +222,112 @@ div.half {
     </a></li>
     
     </ul>
+    
+    
     </div>
     
   </div>
 
+<div class="divider"></div>
+ <div class="halfcontainer">
+ 
+ 
+   <div id="us"> <p>US</p></div>
+   
+    <div class="half">
+   
+    <ul>
+      
+    <li><a class="halfus" href="https://portal.uspto.gov/pair/PublicPair">
+      USPTO Public PAIR
+    </a></li>
 
-
-
-
+    </ul>
+    </div>
+    
+      <div class="half">
+   
+    <ul>
+      
+    <li><a class="halfus" href="http://tmsearch.uspto.gov/bin/gate.exe?f=tess&state=4808:h45me8.1.1">
+      USPTO TESS
+    </a></li>
 
   
+    </ul>
+    </div>
+    
+  
+ 
+ </div>
+ <div class="divider"></div>
+  <div class="halfcontainer">
+ <div id="ep"> <p>EP UK</p></div>
+ <div class="half">
+   
+    <ul>
+      
+    <li><a class="halfep" href="https://register.epo.org/regviewer">
+      EP Register
+    </a></li>
+
+    </ul>
+    </div>
+    
+      <div class="half">
+   
+    <ul>
+      
+    <li><a class="halfep" href="https://euipo.europa.eu/eSearch/">
+     EUIPO eSearch
+    </a></li>
+    
+      <li><a class="halfep" href="https://www.tmdn.org/tmview/welcome/">
+     TMview
+    </a></li>
+    
+
+  
+    </ul>
+    </div>
+    
+
+</div>
+
+<!--
+   <div class="divider"></div>
+
+ <div class="halfcontainer">
+ <div id="asia"> <p>ASIA</p></div>
+ <div class="half">
+   
+    <ul>
+      
+    <li><a class="halfasia" href="https://register.epo.org/regviewer">
+      EP Register
+    </a></li>
+
+    </ul>
+    </div>
+    
+      <div class="half">
+   
+    <ul>
+      
+    <li><a class="halfasia" href="https://euipo.europa.eu/eSearch/">
+     EUIPO eSearch
+    </a></li>
+    
+      <li><a class="halfasia" href="https://www.tmdn.org/tmview/welcome/">
+     TMview
+    </a></li>
+    
+
+  
+    </ul>
+    </div>
+    
+-->
     
     
     
